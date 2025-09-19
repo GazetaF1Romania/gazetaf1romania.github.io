@@ -1,6 +1,7 @@
 const preview = document.getElementById("preview");
 const links = document.querySelectorAll('.tooltip-link');
 const imageList = [
+    "coperti/11.webp",
     "coperti/10.webp",
     "coperti/9.webp",  // Nr 9
 "coperti/8.webp",  // Nr 8
