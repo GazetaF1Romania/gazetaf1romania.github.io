@@ -1,6 +1,7 @@
 const preview = document.getElementById("preview");
 const links = document.querySelectorAll('.tooltip-link');
 const imageList = [
+    "coperti/10.webp",
     "coperti/9.webp",  // Nr 9
 "coperti/8.webp",  // Nr 8
 "coperti/7.webp",  // Nr 7
@@ -23,4 +24,3 @@ links.forEach((link, index) => {
         preview.style.display = "none";
     });
 });
-
