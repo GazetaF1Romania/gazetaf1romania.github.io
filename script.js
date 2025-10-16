@@ -1,18 +1,20 @@
 const preview = document.getElementById("preview");
 const links = document.querySelectorAll('.tooltip-link');
-const imageList = [
+const imageList = [   //aici punem copertile, de la cea mai noua la cea mai veche editie
+    "coperti/14.png",
+    "coperti/13.webp",
     "coperti/12.webp",
     "coperti/11.webp",
     "coperti/10.webp",
-    "coperti/9.webp",  // Nr 9
-"coperti/8.webp",  // Nr 8
-"coperti/7.webp",  // Nr 7
-"coperti/6.png",   // Nr 6
-"coperti/5.png",   // Nr 5
-"coperti/4.webp",  // Nr 4
-"coperti/3.png",   // Nr 3
-"coperti/2.png",   // Nr 2
-"coperti/1.png"    // Nr 1
+    "coperti/9.webp",  
+"coperti/8.webp",  
+"coperti/7.webp",  
+"coperti/6.png",   
+"coperti/5.png",   
+"coperti/4.webp",  
+"coperti/3.png",   
+"coperti/2.png",   
+"coperti/1.png"    
 ];
 links.forEach((link, index) => {
     link.dataset.preview = imageList[index];
