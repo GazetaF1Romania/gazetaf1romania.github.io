@@ -1,7 +1,8 @@
 const preview = document.getElementById("preview");
 const links = document.querySelectorAll('.tooltip-link');
 const imageList = [   //aici punem copertile, de la cea mai noua la cea mai veche editie
-"coperti/Screenshot_20251209_180655_ReadEra.png", 
+"coperti/coperta.png",
+    "coperti/Screenshot_20251209_180655_ReadEra.png", 
     "coperti/Screenshot_20251202_190347_ReadEra.png", 
     "coperti/Screenshot_20251125_190751_Gallery.png", 
 "coperti/Screenshot_20251118_190343_Gallery.png", 
