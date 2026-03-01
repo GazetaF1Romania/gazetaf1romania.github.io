@@ -46,10 +46,10 @@ window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
 
     if (scrollY > 50) {
-        header.style.background = 'rgba(10, 10, 15, 0.95)';
-        header.style.boxShadow = '0 4px 24px rgba(0,0,0,0.3)';
+        header.style.background = 'rgba(255, 255, 255, 0.95)';
+        header.style.boxShadow = '0 4px 24px rgba(0,0,0,0.08)';
     } else {
-        header.style.background = 'rgba(10, 10, 15, 0.85)';
+        header.style.background = 'rgba(255, 255, 255, 0.9)';
         header.style.boxShadow = 'none';
     }
 
