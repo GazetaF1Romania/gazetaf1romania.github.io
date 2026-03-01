@@ -5,58 +5,266 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gazeta F1 în România</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="logo_gazeta_no_background.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
 	<meta name="description" content="Gazeta F1 în România - publicație pasionată despre Formula 1">
-	</head>
+</head>
 <body>
+
+	<!-- Racing stripe top accent -->
+	<div class="racing-stripe"></div>
+
 	<header class="site-header">
-		<div class="container">
-			<h1 class="site-title">Gazeta F1 în România</h1>
-			<p class="contact">Ne puteți contacta la <a href="mailto:gazetaf1romania@yahoo.com">adresa de e-mail a redacției</a></p>
+		<div class="container header-inner">
+			<a href="/" class="logo-link">
+				<img src="logo_gazeta_no_background.png" alt="Gazeta F1 România Logo" class="logo">
+			</a>
+			<div class="header-text">
+				<h1 class="site-title">Gazeta F1</h1>
+				<p class="site-subtitle">în România</p>
+			</div>
+			<nav class="header-nav">
+				<a href="#despre" class="nav-link">Despre</a>
+				<a href="#editii" class="nav-link">Ediții</a>
+				<a href="#contact" class="nav-link">Contact</a>
+			</nav>
 		</div>
 	</header>
 
-	<main class="container">
-		<section class="hero">
-			<div class="hero-content">
-				<h2>Despre Gazeta</h2>
-				<p class="lead">Când s-a aprins prima scânteie a ideii „Gazeta F1 în România”, nu avea nimeni un plan, un nume stabilit sau vreo strategie. Aveam doar pasiunea noastră uriașă pentru Formula 1, conversații interminabile, fie pe grupul de Daily Chat, fie în privat, și dorința sinceră de a crea un spațiu unde motorsportul să fie trăit cu sufletul, nu doar analizat pe grafic. Chiar dacă totul a pornit din câteva mesaje și glume, gazeta a devenit acum un ritual săptămânal pentru cititori și gazetari.</p>
+	<main>
+		<!-- Hero section -->
+		<section class="hero" id="despre">
+			<div class="hero-bg"></div>
+			<div class="container hero-content">
+				<div class="hero-badge">Despre Gazetă</div>
+				<h2 class="hero-title">Pasiune. Viteză. <span class="accent">Formula 1.</span></h2>
+				<p class="lead">Când s-a aprins prima scânteie a ideii „Gazeta F1 în România", nu avea nimeni un plan, un nume stabilit sau vreo strategie. Aveam doar pasiunea noastră uriașă pentru Formula 1, conversații interminabile, fie pe grupul de Daily Chat, fie în privat, și dorința sinceră de a crea un spațiu unde motorsportul să fie trăit cu sufletul, nu doar analizat pe grafic. Chiar dacă totul a pornit din câteva mesaje și glume, gazeta a devenit acum un ritual săptămânal pentru cititori și gazetari.</p>
 			</div>
 		</section>
 
-		<section class="editions">
-			<h2>Ediții</h2>
-			<p class="editions-sub">Click pe o ediție pentru a o deschide. Treceti mouse-ul peste link pentru a vedea coperta.</p>
-			<ul class="editions-grid">
-				<li><a href="editii/Gazeta%20F1%20în%20România%20Nr.%2024.pdf" target="_blank" class="tooltip-link">Nr 24 (curent)</a></li>
-				<li><a href="editii/Gazeta_Craciun_compressed.pdf" target="_blank" class="tooltip-link">Nr 23</a></li>
-				<li><a href="editii/Gazeta%20F1%20în%20România%2822%29.pdf" target="_blank" class="tooltip-link">Nr 22</a></li>
-				<li><a href="editii/Gazeta%20F1%20în%20România%20%2821%29.pdf" target="_blank" class="tooltip-link">Nr 21</a></li>
-				<li><a href="editii/Gazeta%20F1%20în%20România%20%2820%29.pdf" target="_blank" class="tooltip-link">Nr 20</a></li>
-				<li><a href="editii/Gazeta%20F1%20în%20România%20%2819%29.pdf" target="_blank" class="tooltip-link">Nr 19</a></li>
-				<li><a href="editii/Gazeta%20F1%20în%20România%20%2818%29.pdf" target="_blank" class="tooltip-link">Nr 18</a></li>
-				<li><a href="editii/Gazeta%20F1%20în%20România%2817%29.pdf" target="_blank" class="tooltip-link">Nr 17</a></li>
-				<li><a href="editii/Gazeta%20F1%20în%20România%2816%29.pdf" target="_blank" class="tooltip-link">Nr 16</a></li>
-				<li><a href="editii/Gazeta%20F1%20în%20România-15.pdf" target="_blank" class="tooltip-link">Nr 15</a></li>
-				<li><a href="editii/Gazeta-Nr14.pdf" target="_blank" class="tooltip-link">Nr 14</a></li>
-				<li><a href="editii/Gazeta-Nr13.pdf" target="_blank" class="tooltip-link">Nr 13</a></li>
-				<li><a href="editii/Gazeta-Nr12.pdf" target="_blank" class="tooltip-link">Nr 12</a></li>
-				<li><a href="editii/Gazeta-Nr11.pdf" target="_blank" class="tooltip-link">Nr 11</a></li>
-				<li><a href="editii/GAZETA-10.pdf" target="_blank" class="tooltip-link">Nr 10</a></li>
-				<li><a href="editii/GAZETA-9.pdf" target="_blank" class="tooltip-link">Nr 9</a></li>
-				<li><a href="editii/GAZETA-ED8.pdf" target="_blank" class="tooltip-link">Nr 8</a></li>
-				<li><a href="editii/Gazeta-nr7.pdf" target="_blank" class="tooltip-link">Nr 7</a></li>
-				<li><a href="editii/GAZETA-ED6.pdf" target="_blank" class="tooltip-link">Nr 6</a></li>
-				<li><a href="editii/GAZETA-2.pdf" target="_blank" class="tooltip-link">Nr 5</a></li>
-				<li><a href="editii/gazeta-f1-romania-editia-1-august-2025-1.pdf" target="_blank" class="tooltip-link">Nr 4</a></li>
-				<li><a href="editii/gazeta_f1_romania_editia_25.07.2025.pdf" target="_blank" class="tooltip-link">Nr 3</a></li>
-				<li><a href="editii/gazeta-f1-ediția-18.07.2025.pdf" target="_blank" class="tooltip-link">Nr 2</a></li>
-				<li><a href="editii/Gazeta-f1-prima-editie.pdf" target="_blank" class="tooltip-link">Nr 1</a></li>
-			</ul>
+		<!-- Editions section -->
+		<section class="editions" id="editii">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Ediții</h2>
+					<p class="section-sub">Toate edițiile gazetei noastre, de la cea mai recentă la prima.</p>
+				</div>
+				<div class="editions-grid">
+					<a href="editii/Gazeta%20F1%20în%20România%20Nr.%2024.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/coperta_rezised_cu_text.png" alt="Coperta Nr 24" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 24</span>
+							<span class="edition-badge">Curent</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta_Craciun_compressed.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/coperta.png" alt="Coperta Nr 23" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 23</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta%20F1%20în%20România%2822%29.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/Screenshot_20251209_180655_ReadEra.png" alt="Coperta Nr 22" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 22</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta%20F1%20în%20România%20%2821%29.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/Screenshot_20251202_190347_ReadEra.png" alt="Coperta Nr 21" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 21</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta%20F1%20în%20România%20%2820%29.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/Screenshot_20251125_190751_Gallery.png" alt="Coperta Nr 20" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 20</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta%20F1%20în%20România%20%2819%29.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/Screenshot_20251118_190343_Gallery.png" alt="Coperta Nr 19" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 19</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta%20F1%20în%20România%2818%29.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/Screenshot_20251111_191220_ReadEra.png" alt="Coperta Nr 18" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 18</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta%20F1%20în%20România%2817%29.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/Screenshot_20251104_194640_Brave.png" alt="Coperta Nr 17" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 17</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta%20F1%20în%20România%2816%29.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/Screenshot_20251028_184556_Brave.png" alt="Coperta Nr 16" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 16</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta%20F1%20în%20România-15.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/Screenshot_20251021_185027_ReadEra.png" alt="Coperta Nr 15" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 15</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta-Nr14.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/14.png" alt="Coperta Nr 14" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 14</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta-Nr13.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/13.webp" alt="Coperta Nr 13" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 13</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta-Nr12.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/12.webp" alt="Coperta Nr 12" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 12</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta-Nr11.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/11.webp" alt="Coperta Nr 11" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 11</span>
+						</div>
+					</a>
+					<a href="editii/GAZETA-10.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/10.webp" alt="Coperta Nr 10" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 10</span>
+						</div>
+					</a>
+					<a href="editii/GAZETA-9.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/9.webp" alt="Coperta Nr 9" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 9</span>
+						</div>
+					</a>
+					<a href="editii/GAZETA-ED8.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/8.webp" alt="Coperta Nr 8" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 8</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta-nr7.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/7.webp" alt="Coperta Nr 7" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 7</span>
+						</div>
+					</a>
+					<a href="editii/GAZETA-ED6.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/6.png" alt="Coperta Nr 6" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 6</span>
+						</div>
+					</a>
+					<a href="editii/GAZETA-2.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/5.png" alt="Coperta Nr 5" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 5</span>
+						</div>
+					</a>
+					<a href="editii/gazeta-f1-romania-editia-1-august-2025-1.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/4.webp" alt="Coperta Nr 4" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 4</span>
+						</div>
+					</a>
+					<a href="editii/gazeta_f1_romania_editia_25.07.2025.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/3.png" alt="Coperta Nr 3" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 3</span>
+						</div>
+					</a>
+					<a href="editii/gazeta-f1-ediția-18.07.2025.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/2.png" alt="Coperta Nr 2" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 2</span>
+						</div>
+					</a>
+					<a href="editii/Gazeta-f1-prima-editie.pdf" target="_blank" class="edition-card tooltip-link">
+						<div class="edition-cover">
+							<img src="coperti/1.png" alt="Coperta Nr 1" loading="lazy">
+						</div>
+						<div class="edition-info">
+							<span class="edition-number">Nr. 1</span>
+						</div>
+					</a>
+				</div>
+			</div>
 		</section>
 	</main>
 
-	<img id="preview" src="" alt="Preview" class="preview-img">
+	<footer class="site-footer" id="contact">
+		<div class="container footer-inner">
+			<div class="footer-brand">
+				<img src="logo_gazeta_no_background.png" alt="Logo" class="footer-logo">
+				<span class="footer-name">Gazeta F1 in Romania</span>
+			</div>
+			<div class="footer-contact">
+				<p>Ne puteți contacta la <a href="mailto:gazetaf1romania@yahoo.com">gazetaf1romania@yahoo.com</a></p>
+			</div>
+			<div class="footer-copy">
+				<p>&copy; 2025 Gazeta F1 in Romania. Toate drepturile rezervate.</p>
+			</div>
+		</div>
+	</footer>
+
 	<script src="script.js"></script>
 </body>
 </html>
-                                                                                  

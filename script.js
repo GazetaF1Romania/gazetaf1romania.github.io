@@ -1,40 +1,57 @@
-const preview = document.getElementById("preview");
-const links = document.querySelectorAll('.tooltip-link');
-const imageList = [   //aici punem copertile, de la cea mai noua la cea mai veche editie
-"coperti/coperta_rezised_cu_text.png",
-"coperti/coperta.png",
-"coperti/Screenshot_20251209_180655_ReadEra.png", 
-"coperti/Screenshot_20251202_190347_ReadEra.png", 
-"coperti/Screenshot_20251125_190751_Gallery.png", 
-"coperti/Screenshot_20251118_190343_Gallery.png", 
-"coperti/Screenshot_20251111_191220_ReadEra.png",
-"coperti/Screenshot_20251104_194640_Brave.png", 
-"coperti/Screenshot_20251028_184556_Brave.png", 
-"coperti/Screenshot_20251021_185027_ReadEra.png", 
-"coperti/14.png",
-"coperti/13.webp",
-"coperti/12.webp",
-"coperti/11.webp",
-"coperti/10.webp",
-"coperti/9.webp",  
-"coperti/8.webp",  
-"coperti/7.webp",  
-"coperti/6.png",   
-"coperti/5.png",   
-"coperti/4.webp",  
-"coperti/3.png",   
-"coperti/2.png",   
-"coperti/1.png"    
-];
-links.forEach((link, index) => {
-    link.dataset.preview = imageList[index];
-    link.addEventListener('mousemove', e => {
-        preview.src = link.dataset.preview;
-        preview.style.display = "block";
-        preview.style.top = (e.clientY + 20) + "px";
-        preview.style.left = (e.clientX + 20) + "px";
+// Scroll-triggered reveal for edition cards
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            // Stagger the animation based on position in the grid
+            const card = entry.target;
+            const cards = Array.from(card.parentElement.children);
+            const index = cards.indexOf(card);
+            const delay = (index % 4) * 80; // stagger per row
+
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, delay);
+
+            observer.unobserve(card);
+        }
     });
-    link.addEventListener('mouseleave', () => {
-        preview.style.display = "none";
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -40px 0px'
+});
+
+document.querySelectorAll('.edition-card').forEach(card => {
+    observer.observe(card);
+});
+
+// Smooth scroll for nav links
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
     });
 });
+
+// Header background on scroll
+const header = document.querySelector('.site-header');
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    if (scrollY > 50) {
+        header.style.background = 'rgba(10, 10, 15, 0.95)';
+        header.style.boxShadow = '0 4px 24px rgba(0,0,0,0.3)';
+    } else {
+        header.style.background = 'rgba(10, 10, 15, 0.85)';
+        header.style.boxShadow = 'none';
+    }
+
+    lastScroll = scrollY;
+}, { passive: true });
