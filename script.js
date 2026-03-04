@@ -55,3 +55,32 @@ window.addEventListener('scroll', () => {
 
     lastScroll = scrollY;
 }, { passive: true });
+
+// VISITOR COUNTER (global + anti refresh)
+
+const namespace = "gazetaf1romania";
+const key = "visits";
+
+// Detect simple bots (discord, whatsapp previews etc)
+const ua = navigator.userAgent.toLowerCase();
+const isBot = /bot|crawl|spider|preview|facebook|whatsapp|discord/i.test(ua);
+
+if (!isBot) {
+    const visited = localStorage.getItem("gazeta_unique_visit");
+    if (!visited) {
+        // first visit from this browser
+        fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+            .then(res => res.json())
+            .then(data => {
+                console.log("Total visitors:", data.value);
+            });
+        localStorage.setItem("gazeta_unique_visit", "true");
+    } else {
+        // returning visitor
+        fetch(`https://api.countapi.xyz/get/${namespace}/${key}`)
+            .then(res => res.json())
+            .then(data => {
+                console.log("Total visitors:", data.value);
+            });
+    }
+}
