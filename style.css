@@ -536,3 +536,7 @@ body {
 p {
   text-align: justify;
 }
+
+.lead + .lead {
+  margin-top: 16px;
+}
